@@ -13,7 +13,7 @@ const server = http.createServer((req, res) => {
 
         fs.readFile(fullPath, (err, content) => {
             if (err) {
-                res.writehead(404);
+                res.writeHead(404);
                 return res.end('File not found');
             }
 
